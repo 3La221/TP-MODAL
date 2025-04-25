@@ -6,9 +6,10 @@ public class TestPile {
 
 
         Scanner entree = new Scanner(System.in) ;
-        System.out.print("Entrez la taille maximale de la pile : ");
-        int taille = entree.nextInt();
-        Pile pile = new PileTableau(taille);
+//        System.out.print("Entrez la taille maximale de la pile : ");
+//        int taille = entree.nextInt();
+//        Pile pile = new PileTableau(taille);
+        Pile pile = new PileVector() ;
 
 
         while(true){

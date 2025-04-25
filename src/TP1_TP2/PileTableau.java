@@ -1,3 +1,5 @@
+package TP1_TP2;
+
 public class PileTableau implements  Pile {
 
     private int tailleMax ;
@@ -16,7 +18,7 @@ public class PileTableau implements  Pile {
     @Override
     public void empiler(Object element) throws PilePleineErreur {
         if( sommet>= tailleMax - 1) {
-            throw new PilePleineErreur("Pile Pleine !") ;
+            throw new PilePleineErreur("TP1_TP2.Pile Pleine !") ;
         }
         tableau[++sommet] = element ;
     }
@@ -24,7 +26,7 @@ public class PileTableau implements  Pile {
     @Override
     public void depiler() throws PileVideErreur {
         if(isPileVide()) {
-            throw new PileVideErreur("Pile Vide !") ;
+            throw new PileVideErreur("TP1_TP2.Pile Vide !") ;
         }
 
         sommet -- ;
@@ -40,7 +42,7 @@ public class PileTableau implements  Pile {
     @Override
     public Object sommet() throws PileVideErreur {
         if(isPileVide()) {
-           throw new PileVideErreur("Pile Vide !") ;
+           throw new PileVideErreur("TP1_TP2.Pile Vide !") ;
         }
         return tableau[sommet] ;
     }

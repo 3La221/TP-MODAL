@@ -1,3 +1,5 @@
+package TP1_TP2;
+
 import java.util.Scanner;
 
 public class TestPile {
@@ -8,7 +10,7 @@ public class TestPile {
         Scanner entree = new Scanner(System.in) ;
 //        System.out.print("Entrez la taille maximale de la pile : ");
 //        int taille = entree.nextInt();
-//        Pile pile = new PileTableau(taille);
+//        TP1_TP2.Pile pile = new TP1_TP2.PileTableau(taille);
         Pile pile = new PileVector() ;
 
 
@@ -48,7 +50,7 @@ public class TestPile {
                     break;
 
                 case 4:
-                    System.out.println("Pile vide ? " + pile.isPileVide());
+                    System.out.println("TP1_TP2.Pile vide ? " + pile.isPileVide());
                     break;
 
                 case 5:

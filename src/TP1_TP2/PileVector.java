@@ -1,3 +1,5 @@
+package TP1_TP2;
+
 import java.util.Vector;
 
 public class PileVector implements Pile {
@@ -15,7 +17,7 @@ public class PileVector implements Pile {
     @Override
     public void depiler() throws PileVideErreur {
         if (isPileVide()) {
-            throw new PileVideErreur("Pile vide !");
+            throw new PileVideErreur("TP1_TP2.Pile vide !");
         }
         pile.removeElementAt(pile.size() - 1);
     }
@@ -28,7 +30,7 @@ public class PileVector implements Pile {
     @Override
     public Object sommet() throws PileVideErreur {
         if (isPileVide()) {
-            throw new PileVideErreur("Pile vide !");
+            throw new PileVideErreur("TP1_TP2.Pile vide !");
         }
         return pile.lastElement();
     }
